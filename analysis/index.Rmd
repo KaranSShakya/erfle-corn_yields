@@ -26,5 +26,8 @@ For temperature and precipitation, data was downloaded from NOAA's Climate Data 
 The only analysis in ArcGIS was the interpolation - kriging method.
 All other R analysis was in this GIT page.
 
-### Poster
-![](../output/econ314_poster.jpg)
+##Poster
+JPG version of the poster in output folder.
+
+
+
