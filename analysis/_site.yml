@@ -1,0 +1,17 @@
+name: "erfle-corn_yields"
+output_dir: ../docs
+navbar:
+  title: "erfle-corn_yields"
+  left:
+  - text: Home
+    href: index.html
+  - text: About
+    href: about.html
+  - text: License
+    href: license.html
+output:
+  workflowr::wflow_html:
+    toc: yes
+    toc_float: yes
+    theme: cosmo
+    highlight: textmate
