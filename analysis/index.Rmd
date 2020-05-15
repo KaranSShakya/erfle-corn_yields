@@ -4,8 +4,27 @@ site: workflowr::wflow_site
 output:
   workflowr::wflow_html:
     toc: false
-editor_options:
-  chunk_output_type: console
 ---
 
-Welcome to my research website.
+# Econ 314: Applied Empirical Data Analysis
+
+## Project Title: **Responsiveness of Corn Yields to Temperature and Precipitation in the Mid-West from 1998 to 2017**
+
+### Date: *Dickinson College, Spring 2020*
+
+### Overview
+This project was completed under the course *Econ 314: Applied Empirical Data Analysis* during the Spring 2020 semester under Professor Steve Erfle. This project was also completed with the help of Jim Ciarrocca, Dickinson's GIS specialist.
+
+In summary, this project is a fixed-effect regression analysis comparing corn yields with temperature and precipitation. We worked with a balanced dataset. Additionally, we completed marginsplot analysis through STATA, and performed an ARIMA Model forecasting through R. NOAA datasets needed to be *interpolated* (as we required county-level data), and this was done through ArcGIS's *interpolation - kriging* tool.
+
+### Data Collection
+Corn yield data was collected from USDA's National Agricultural Statistical Services's Quick Stat page (https://quickstats.nass.usda.gov/). A survey data for corn yields was selected.
+
+For temperature and precipitation, data was downloaded from NOAA's Climate Data Online (https://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted). Since we downloaded daily temperature and precipitation values, R was required to open these datasets. They were *group_by* and *summarized* into yearly averages. 
+
+### Analysis
+The only analysis in ArcGIS was the interpolation - kriging method.
+All other R analysis was in this GIT page.
+
+### Poster
+![](../output/econ314_poster.jpg)
