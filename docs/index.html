@@ -321,7 +321,7 @@ $(document).ready(function () {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2020-05-23
+<strong>Last updated:</strong> 2020-05-25
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
@@ -352,16 +352,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomKaranSShakyaerflecornyieldstree9f9b87f1b1d5d720cf685b167e4b5589da4ec8cctargetblank9f9b87fa"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/KaranSShakya/erfle-corn_yields/tree/9f9b87f1b1d5d720cf685b167e4b5589da4ec8cc" target="_blank">9f9b87f</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomKaranSShakyaerflecornyieldstreec5755801e486e148ba70ab15ea11430d897a4cfdtargetblankc575580a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/KaranSShakya/erfle-corn_yields/tree/c5755801e486e148ba70ab15ea11430d897a4cfd" target="_blank">c575580</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomKaranSShakyaerflecornyieldstree9f9b87f1b1d5d720cf685b167e4b5589da4ec8cctargetblank9f9b87fa" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomKaranSShakyaerflecornyieldstreec5755801e486e148ba70ab15ea11430d897a4cfdtargetblankc575580a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/KaranSShakya/erfle-corn_yields/tree/9f9b87f1b1d5d720cf685b167e4b5589da4ec8cc" target="_blank">9f9b87f</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/KaranSShakya/erfle-corn_yields/tree/c5755801e486e148ba70ab15ea11430d897a4cfd" target="_blank">c575580</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -372,12 +372,10 @@ Ignored files:
     Ignored:    .Rproj.user/
 
 Untracked files:
-    Untracked:  .DS_Store
+    Untracked:  output/.DS_Store
 
 Unstaged changes:
-    Modified:   analysis/_site.yml
     Modified:   analysis/index.Rmd
-    Deleted:    output/econ314_poster.jpg
 
 </code></pre>
 <p>
@@ -416,6 +414,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/KaranSShakya/erfle-corn_yields/blob/c5755801e486e148ba70ab15ea11430d897a4cfd/analysis/index.Rmd" target="_blank">c575580</a>
+</td>
+<td>
+KaranSShakya
+</td>
+<td>
+2020-05-23
+</td>
+<td>
+final erfle commits.
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/KaranSShakya/erfle-corn_yields/c5755801e486e148ba70ab15ea11430d897a4cfd/docs/index.html" target="_blank">c575580</a>
+</td>
+<td>
+KaranSShakya
+</td>
+<td>
+2020-05-23
+</td>
+<td>
+final erfle commits.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -529,10 +561,27 @@ Start workflowr project.
 <h3>Analysis</h3>
 <p>The only analysis in ArcGIS was the interpolation - kriging method. All other R analysis was in this GIT page.</p>
 </div>
+<div id="results" class="section level3">
+<h3>Results</h3>
+</div>
 <div id="poster" class="section level3">
 <h3>Poster</h3>
 <p>JPG version of the poster in analysis folder.</p>
 <p><img src="econ314_poster.jpg" /></p>
+</div>
+<div id="executive-summary" class="section level3">
+<h3>Executive Summary</h3>
+<p><strong>Responsiveness of Corn Yields to Temperature and Precipitation in the Mid-West</strong></p>
+<p><em>Karan S. Shakya</em></p>
+<pre><code>The Mid-Western states are often called the “corn belt region” because of its high corn production. However, as concerns for climate change increases and as agricultural technologies proliferate, the future of corn production in the Mid-West is under scrutiny. This project attempts to understand how climatic factors like ‘temperature’ and ‘precipitation’ affect corn yields and attempts to identify the importance of agricultural technologies in maintaining high corn yields. We collected county-level corn yield data (USDA’s National Agricultural Service) and regional temperature and precipitation data (NOAA’s Climate Data Center). The regional temperature and precipitation dataset were interpolated into a county-level dataset through the ‘interpolation-kriging’ tool in ArcGIS 
+
+We constructed a ‘Climatic Model’ that consisted of a dependent variable: Corn Yields (hg/ha) and two independent variables: Average temperature (degree Celsius) and Average Precipitation (mm). The model was represented as a panel regression that used the non-linear interaction terms of both temperature and precipitation. A Two-Way Fixed Effects panel regression was performed, which took into account the inherent biases of each county’s corn yield trends. Both the non-liner terms of temperature and precipitation were significant under P &lt; 0.01, and the r-square for the regression model was 0.487.
+
+A ‘marginsplot’ command was used on the Climatic Model using Stata, which helped provide a graphical illustration of the non-linear variables. Both average temperature and average precipitation had an inverted u-shape, which supported our hypothesis of non-linearity. In other words, at low levels, an increase in temperature and precipitation provided corn plants with a better environmental condition to generate more yields. However, at high levels, any increase in temperature and precipitation resulted in a detrimental effect on corn yields. High temperature often means long droughts and high precipitation means frequent flooding –scenarios that are harmful to corn plants.
+
+We also predicted the expected average temperature and precipitation values in 2022. This was completed through the ARIMA statistical model based in R. The ARIMA model forecasts a time-series data based on its past values. Our results indicated that the expected value of temperature and precipitation in 2022 would result in a decline in corn yields. In other words, holding all other factors constant, the Climatic Model predicted that in 2022, corn yields in the mid-west would decline as a result of changes in temperature and precipitation.
+
+It is important to acknowledge that our Climatic Model omits the impact of technologies such as irrigation, hybrid seeds, fertilizers, and pesticides on corn yields. These technologies are a crucial part of today’s agricultural system. We compared the corn yield trends of 1998 with the corn yield trends of 2016 and found that corn yields in 2016 were significantly greater. At every level of average temperature and average precipitation, corn yield in 2016 was greater than in 1998 – a feat only possible as a result of these agricultural technologies. We conclude, that these agricultural technologies will play an instrumental role in tomorrow’s corn agriculture, especially to counteract the corn decline as predicted by the Climatic Model. </code></pre>
 </div>
 </div>
 </div>

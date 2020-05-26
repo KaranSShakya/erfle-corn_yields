@@ -12,6 +12,8 @@ output:
 
 ### Date: *Dickinson College, Spring 2020*
 
+
+
 ### Overview
 This project was completed under the course *Econ 314: Applied Empirical Data Analysis* during the Spring 2020 semester under Professor Steve Erfle. This project was also completed with the help of Jim Ciarrocca, Dickinson's GIS specialist.
 
@@ -26,11 +28,29 @@ For temperature and precipitation, data was downloaded from NOAA's Climate Data 
 The only analysis in ArcGIS was the interpolation - kriging method.
 All other R analysis was in this GIT page.
 
+### Results
+
+
 ### Poster
 JPG version of the poster in analysis folder.
 
 ![](econ314_poster.jpg)
 
+### Executive Summary
+
+**Responsiveness of Corn Yields to Temperature and Precipitation in the Mid-West**
+
+*Karan S. Shakya*
+
+	The Mid-Western states are often called the “corn belt region” because of its high corn production. However, as concerns for climate change increases and as agricultural technologies proliferate, the future of corn production in the Mid-West is under scrutiny. This project attempts to understand how climatic factors like ‘temperature’ and ‘precipitation’ affect corn yields and attempts to identify the importance of agricultural technologies in maintaining high corn yields. We collected county-level corn yield data (USDA’s National Agricultural Service) and regional temperature and precipitation data (NOAA’s Climate Data Center). The regional temperature and precipitation dataset were interpolated into a county-level dataset through the ‘interpolation-kriging’ tool in ArcGIS 
+	
+	We constructed a ‘Climatic Model’ that consisted of a dependent variable: Corn Yields (hg/ha) and two independent variables: Average temperature (degree Celsius) and Average Precipitation (mm). The model was represented as a panel regression that used the non-linear interaction terms of both temperature and precipitation. A Two-Way Fixed Effects panel regression was performed, which took into account the inherent biases of each county’s corn yield trends. Both the non-liner terms of temperature and precipitation were significant under P < 0.01, and the r-square for the regression model was 0.487.
+	
+	A ‘marginsplot’ command was used on the Climatic Model using Stata, which helped provide a graphical illustration of the non-linear variables. Both average temperature and average precipitation had an inverted u-shape, which supported our hypothesis of non-linearity. In other words, at low levels, an increase in temperature and precipitation provided corn plants with a better environmental condition to generate more yields. However, at high levels, any increase in temperature and precipitation resulted in a detrimental effect on corn yields. High temperature often means long droughts and high precipitation means frequent flooding –scenarios that are harmful to corn plants.
+	
+	We also predicted the expected average temperature and precipitation values in 2022. This was completed through the ARIMA statistical model based in R. The ARIMA model forecasts a time-series data based on its past values. Our results indicated that the expected value of temperature and precipitation in 2022 would result in a decline in corn yields. In other words, holding all other factors constant, the Climatic Model predicted that in 2022, corn yields in the mid-west would decline as a result of changes in temperature and precipitation.
+	
+	It is important to acknowledge that our Climatic Model omits the impact of technologies such as irrigation, hybrid seeds, fertilizers, and pesticides on corn yields. These technologies are a crucial part of today’s agricultural system. We compared the corn yield trends of 1998 with the corn yield trends of 2016 and found that corn yields in 2016 were significantly greater. At every level of average temperature and average precipitation, corn yield in 2016 was greater than in 1998 – a feat only possible as a result of these agricultural technologies. We conclude, that these agricultural technologies will play an instrumental role in tomorrow’s corn agriculture, especially to counteract the corn decline as predicted by the Climatic Model. 
 
 
 
